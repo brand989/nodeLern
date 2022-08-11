@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/brand989/nodeLern#readme",
   "dependencies": {
+    "ansi": "^0.3.1",
     "colors": "^1.4.0"
   }
 }
