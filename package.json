@@ -1,5 +1,5 @@
 {
-  "name": "nodeLern",
+  "name": "nodelern",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -20,6 +20,11 @@
   "homepage": "https://github.com/brand989/nodeLern#readme",
   "dependencies": {
     "ansi": "^0.3.1",
-    "colors": "^1.4.0"
+    "colors": "^1.4.0",
+    "inquirer": "^8.2.4",
+    "yargs": "^17.5.1"
+  },
+  "bin": {
+    "reader": "cliapp.js"
   }
 }
