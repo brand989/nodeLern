@@ -29,6 +29,7 @@
     "inquirer": "^8.2.4",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.5.2",
+    "socket.io": "^4.5.1",
     "yargs": "^17.5.1"
   },
   "bin": {

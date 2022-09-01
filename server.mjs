@@ -20,17 +20,13 @@ const app = express()
 
 app.use(bodyParser.json())
 
-
-
 app.get('/status', (req, res) => res.send('OK'))
 
 app.get("/profile", verifyToken, (req, res) => {
   res.send('Im secured')
 });
 
-
 app.listen(port, () => console.log(`Server has been started to http://localhost:${port}`))
 
-
 app.use('/messages', MessageRouter)
-app.use("/", AuthRouter);
+app.use('/', AuthRouter);

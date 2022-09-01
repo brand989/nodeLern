@@ -1,10 +1,15 @@
-import express from "express";
-import { Messages } from "../models/messages.mjs";
-const router = express.Router();
+import express from "express"
+import { Messages } from "../models/messages.mjs"
+const router = express.Router()
+
+
 
 router
   .get("/", async (_, res) => {
     const messages = await Messages.find();
+
+
+
     res.json(messages);
   })
   .post("/", async (req, res) => {
@@ -32,6 +37,8 @@ router
 
     res.json(updateMessage);
   });
+
+  
 
 export default router;
 
